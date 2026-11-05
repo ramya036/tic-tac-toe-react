@@ -1,11 +1,12 @@
 {
   "name": "tic-tac-toe-react",
   "version": "0.1.0",
-  "homepage": "https://ramya036.github.io/Tic-Tac-Toe-React",
+  "homepage": ".",
   "private": true,
   "dependencies": {
+    "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -13,8 +14,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,6 +38,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

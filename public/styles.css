@@ -1,0 +1,44 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  text-align: center;
+  background: #f6f5fb;
+  color: #1b1e3a;
+  margin: 0;
+  padding: 32px 16px;
+}
+h1 { margin: 0 0 8px; font-size: 40px; letter-spacing: -0.02em; }
+.status { font-size: 20px; font-weight: 600; min-height: 1.5em; margin: 0 0 16px; }
+.X { color: #e5484d; }
+.O { color: #4f46e5; }
+#game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+}
+#game-grid > button {
+  font: 700 64px/1 system-ui, sans-serif;
+  border: 2px solid #e3e1f0;
+  border-radius: 16px;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+#game-grid > button:not(:disabled):hover { background: #ecebfe; }
+#game-grid > button:disabled { cursor: default; }
+#game-grid > button.win { background: #ffc857; border-color: #ffc857; }
+#game-grid > button:focus-visible, .new-game:focus-visible { outline: 3px solid #4f46e5; outline-offset: 2px; }
+.score { color: #5e6385; margin: 20px 0 8px; }
+.new-game {
+  font: 600 16px system-ui, sans-serif;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 0;
+  background: #1b1e3a;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 380px) {
+  #game-grid { grid-template-columns: repeat(3, 84px); grid-template-rows: repeat(3, 84px); }
+}
