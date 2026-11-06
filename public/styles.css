@@ -42,3 +42,8 @@ h1 { margin: 0 0 8px; font-size: 40px; letter-spacing: -0.02em; }
 @media (max-width: 380px) {
   #game-grid { grid-template-columns: repeat(3, 84px); grid-template-rows: repeat(3, 84px); }
 }
+
+/* Embedded in the portfolio */
+body.embedded { padding: 20px 12px; background: transparent; }
+body.embedded h1 { display: none; }
+body.embedded .score { margin-top: 14px; }
